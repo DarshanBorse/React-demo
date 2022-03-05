@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Expence from './components/Expenses';
 
@@ -15,6 +16,13 @@ function App() {
             <Expence expence={expence} />
         </div>
     );
+
+    // return React.createElement(
+    //     "div",
+    //     {},
+    //     React.createElement("h2", {}, `Let's go started`),
+    //     React.createElement(Expence, { expence: expence })
+    // );
 }
 
 export default App;
