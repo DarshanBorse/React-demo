@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Expence from './components/Expenses';
+import NewExpense from './components/NewExpense';
 
 function App() {
     const expence = [
@@ -12,17 +13,11 @@ function App() {
 
     return (
         <div className='App'>
-            <h2>Let's go started</h2>
+            <NewExpense />
             <Expence expence={expence} />
         </div>
     );
 
-    // return React.createElement(
-    //     "div",
-    //     {},
-    //     React.createElement("h2", {}, `Let's go started`),
-    //     React.createElement(Expence, { expence: expence })
-    // );
 }
 
 export default App;
